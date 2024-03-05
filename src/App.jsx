@@ -20,6 +20,10 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
+import Paper from '@mui/material/Paper';
+import Divider from '@mui/material/Divider';
+import Grid from '@mui/material/Grid';
+
 
 const YellowCircleIcon = styled(CircleIcon)({
   color: 'yellow',
@@ -164,11 +168,31 @@ function App() {
             </CardContent>
           </Card>
           </Box>
-          <Box className="topic" sx={{p:2, mt: 2}}>
+          <Box className="topic">
+          <Box sx={{ padding: '10px 2px 0 10px', marginTop: 2 }}>
             <Typography variant="h5" gutterBottom>
               Pantip Pick
             </Typography>
             <p style={{ marginTop: '1px', fontSize: '14px' }}>กระทู้คุณภาพคัดเลือกโดยทีมงาน Pantip</p>
+            </Box>
+            <Grid container spacing={2}>
+                <Grid item xs={7}>
+                  <Paper elevation={2} sx={{p:2}}>
+                          <p style={{ marginTop: '1px', fontSize: '14px' }}>Billboard Hot 100 เป็นแค่ๆชาร์ตนึงเท่านั้น อาจจะยังไม่ได้พิสูจน์ความสำเร็จอะไรมากหรือป่าวคะ</p>
+                          <p style={{ fontSize: '12px' }}>สมาชิกหมายเลข 8017852 | 32 นาที</p>
+                          <Divider />
+                          <Box sx={{display: 'flex', gap: 3, alignItems: 'center'}}>
+                            <img src="https://f.ptcdn.info/429/083/000/s9vhmu1tx56bJ333ez60n-s.jpg" alt="" 
+                            width="100"
+                            />
+                            <Box>
+                              <p style={{ fontSize: '14px' }}>เอามาแบบนี้ เป็นผลดีต่อนักกีฬา หรือจะทำให้นักกีฬาสติแตกคะ</p>
+                              <p style={{ fontSize: '12px' }}>สมาชิกหมายเลข 7736422 | 57 นาที</p>
+                            </Box> 
+                          </Box>
+                  </Paper>
+                </Grid>
+              </Grid>
             </Box>
       </Container>
     </>
