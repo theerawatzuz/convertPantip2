@@ -173,7 +173,7 @@ function App() {
             <Typography variant="h5" gutterBottom>
               Pantip Pick
             </Typography>
-            <p style={{ marginTop: '1px', fontSize: '14px' }}>กระทู้คุณภาพคัดเลือกโดยทีมงาน Pantip</p>
+            <p style={{ marginTop: '1px', fontSize: '14px', color: 'grey' }}>กระทู้คุณภาพคัดเลือกโดยทีมงาน Pantip</p>
             </Box>
             <Grid container spacing={2}>
                 <Grid item xs={7}>
